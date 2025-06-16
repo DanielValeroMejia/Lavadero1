@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>AutoLavado Súper 1</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="js/script.js"></script>
+		
+		 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-KY4jGJwoAhIuW9jjKDFUp0pqKksuEc5lbXU+NQvwXvA0d7a5e6QjydBS2R7MFOAbFPxM2eNbs67FLbS2Vv7m9A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+	</head>
+	<body>
+		<header>
+			<div class="container-hero">
+				<div class="container hero">
+					<a href="https://wa.me/573165074658?text=Hola%2C%20quiero%20mas%20información." target="_blank" style="text-decoration: none; color: inherit;">
+	<div class="customer-support">
+		<i class="fa-solid fa-headset"></i>
+		<div class="content-customer-support">
+			<span class="text">Soporte al cliente</span>
+			<span class="number">3165074658</span>
+		</div>
+	</div>
+</a>
+
+					<div class="container-logo">
+						<i class="fa-solid fa-car-side"></i>
+						<h1 class="logo"><a href="/">AutoLavado Súper-1</a></h1>
+					</div>
+
+						</div>
+					  </div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="#Inicio">Inicio</a></li>
+						<li><a href="#Acerca">Acerca de nosotros</a></li>
+						<li><a href="#Servicios">Servicios</a></li>
+						<li><a href="#">Imagenes</a></li>
+						<li><a href="#Mas">Más</a></li>
+						<li><a href="#">Contactanos</a></li>
+					</ul>
+
+                    <form class="search-form" id="searchForm">
+                        <input type="search" id="searchInput" placeholder="Buscar.." />
+                        <button type="submit" class="btn-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </form>
+                      
+                      <div class="results" id="results"></div>
+				</nav>
+			</div>
+		</header>
+
+<section id="Inicio" class="banner">
+	<div class="content-banner">
+		<p>Autolavado Premium</p>
+		<h2>¡Deja tu auto como nuevo! <br />Disfruta de nuestros servicios de limpieza profunda y cuidado de la pintura. Siente la diferencia en cada lavado.</h2>
+		<a href="#" onclick="openModal()">¡Infórmate!</a>
+	</div>
+</section>
+
+<div id="infoModal" class="modal">
+	<div class="modal-content">
+		<span class="close" onclick="closeModal()">&times;</span>
+		<h3 style="text-align: center;">Folletos de Servicios</h3>
+
+		<!-- Carrusel de imágenes -->
+		<div class="carousel-container">
+<button class="carousel-btn prev" onclick="changeSlide(-1)">
+  <i class="fas fa-chevron-left"></i>
+</button>
+
+  <div class="carousel-slide" id="carouselSlide"></div>
+
+<button class="carousel-btn next" onclick="changeSlide(1)">
+  <i class="fas fa-chevron-right"></i>
+</button>
+		</div>
+	</div>
+</div>
+
+		
+		
+
+		<main class="main-content">
+			<section class="container container-features">
+				<div class="card-feature">
+					<i class="fa-solid fa-car"></i>
+					<div class="feature-content">
+						<span>Mejor AutoLavado a nivel Nacional</span>
+						<p>Descuentos y promociones todos los dias.</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-wallet"></i>
+					<div class="feature-content">
+						<span>Contrareembolso</span>
+						<p>100% garantía de que tu carro quedara impecable.</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-gift"></i>
+					<div class="feature-content">
+						<span>Tarjeta regalo especial</span>
+						<p>Bonos especiales con regalo</p>
+					</div>
+				</div>
+<div class="card-feature" onclick="window.open('https://wa.me/573165074658?text=Hola%2C%20quiero%20mas%20información.', '_blank')"
+     style="cursor: pointer;">
+	<i class="fa-solid fa-headset"></i>
+	<div class="feature-content">
+		<span>Servicio al cliente</span>
+		<p>Marque aquí: 3165074658</p>
+	</div>
+</div>
+
+			</section>
+
+			<section id="Acerca"class="gallery">
+				<div class="gallery-img-container">
+				  <img src="img/deporte1.jpg" alt="Gallery Img1" class="gallery-img-1" />
+				</div>
+				<div class="gallery-img-container">
+				  <img src="img/deporte2.jpeg" alt="Gallery Img2" class="gallery-img-2" />
+				</div>
+				<div class="gallery-img-container gallery-img-3">
+				  <img src="img/gallery3.jpg" alt="Gallery Img3" />
+				  <div class="overlay">
+					<h2>Sobre Nosotros</h2>
+					<p>Somos un equipo comprometido con el cuidado y la estética de tu vehículo.
+                        Nuestra misión es ofrecerte un servicio de autolavado de alta calidad, eficiente y seguro, que devuelva el brillo y la frescura a tu auto. Desde lavados exprés hasta servicios personalizados de detallado, nos dedicamos a brindarte todo lo necesario para que tu vehículo luzca impecable en cada ocasión.
+                        Confía en nosotros y redescubre la satisfacción de conducir un auto limpio y reluciente.</p>
+				  </div>
+				</div>
+				<div class="gallery-img-container">
+				  <img src="img/deporte5.jpg" alt="Gallery Img4" class="gallery-img-4" />
+				</div>
+				<div class="gallery-img-container">
+				  <img src="img/deporte6.jpeg" alt="Gallery Img5" class="gallery-img-5" />
+				</div>
+			  </section>
+
+              <section class="container top-categories">
+                <h1 class="heading-1">Promociones en Tendencia</h1>
+                <div class="container-categories">
+                    <div class="card-category category-moca open-modal" data-target="modal-polinchado">
+                        <p>Polinchado</p>
+                        <span>Ver más</span>
+                    </div>
+            
+                    <div class="card-category category-kayak open-modal" data-target="modal-ceramico">
+                        <p>Cerámico</p>
+                        <span>Ver más</span>
+                    </div>
+            
+                    <div class="card-category category-buceo open-modal" data-target="modal-motor">
+                        <p>Motor</p>
+                        <span>Ver más</span>
+                    </div>
+                </div>
+            </section>
+
+           <div id="modal-polinchado" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>¿Qué es el Polinchado?</h2>
+    <img src="img/Polinchado.jpg" alt="Polinchado" style="width: 100%; border-radius: 10px; margin: 15px 0;" />
+    <p>El polinchado para carro es un tratamiento especializado que restaura y protege la pintura del vehículo, eliminando rayones leves, marcas y suciedad adherida. Deja la superficie más brillante y protegida contra contaminantes.</p>
+  </div>
+</div>
+              
+<div id="modal-ceramico" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>¿Qué es el Recubrimiento Cerámico?</h2>
+    <img src="img/ceramico.jpeg" alt="Cerámico" style="width: 100%; border-radius: 10px; margin: 15px 0;" />
+    <p>El recubrimiento cerámico es una capa protectora que se aplica sobre la pintura del vehículo para brindar un acabado ultra brillante y una barrera contra rayos UV, contaminantes y suciedad. Facilita la limpieza y mantiene el color intacto por más tiempo.</p>
+  </div>
+</div>
+<div id="modal-motor" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>¿Qué es el Detallado de Motor?</h2>
+    <img src="img/folleto2.jpeg" alt="Motor" style="width: 100%; border-radius: 10px; margin: 15px 0;" />
+    <p>El detallado de motor consiste en la limpieza profunda y el acondicionamiento de las piezas del motor para eliminar grasa, polvo y residuos. Mejora la estética, facilita el mantenimiento y ayuda a detectar posibles fugas o problemas mecánicos.</p>
+  </div>
+</div>
+<!-- 
+			<section class="container top-products">
+				<h1 class="heading-1">Otros Deportes</h1>
+
+				<div class="container-options">
+					<span>Recientemente agregados</span>
+					<span>Mejor Valorados</span>
+				</div>
+
+				<div class="container-products">
+					 Deporte 1
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/ATV.png" alt="ATV" />
+							<span class="discount">-13%</span>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>ATV - MotoCross</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$440.000 <span>$500.300</span></p>
+						</div>
+					</div>
+					
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="img/kitesurf.jpg"
+								alt="kitesurf"
+							/>
+							<span class="discount">-22%</span>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Kite Surf</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$500.000 <span>$700.300</span></p>
+						</div>
+					</div>
+				
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="img/surf.jpg"
+								alt="Cafe Australiano"
+							/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3>Surf</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$300.000</p>
+						</div>
+					</div>
+				
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/canyoning.jpg" alt="Cafe Helado" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Canyoning</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$560.000</p>
+						</div>
+					</div>
+				</div>
+			</section>
+        -->
+			  
+			  
+
+			<section id="Servicios" class="container specials">
+				<h1 class="heading-1">Planes</h1>
+
+				  <div class="container-products">
+    <!-- Producto 1 -->
+    <div class="card-product">
+      <div class="container-img">
+        <img src="img/facil.png" alt="Lavado Normal" />
+        <span class="discount">-13%</span>
+        <div class="button-group">
+          <span><i class="fa-regular fa-eye"></i></span>
+          <span><i class="fa-regular fa-heart"></i></span>
+          <span><i class="fa-solid fa-code-compare"></i></span>
+        </div>
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Lavado Normal</h3>
+        <span class="add-cart"
+              data-title="Lavado Normal"
+              data-img="img/normal.jpg"
+              data-desc="Limpieza interior y exterior"
+              data-price="">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="card-product">
+      <div class="container-img">
+        <img src="img/chill.png" alt="Lavado Detallado" />
+        <span class="discount">-22%</span>
+        <div class="button-group">
+          <span><i class="fa-regular fa-eye"></i></span>
+          <span><i class="fa-regular fa-heart"></i></span>
+          <span><i class="fa-solid fa-code-compare"></i></span>
+        </div>
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Lavado Detallado</h3>
+        <span class="add-cart"
+              data-title="Lavado Detallado"
+              data-img="img/chill.png"
+              data-desc="Lavado profundo con detalles especiales"
+              data-price="">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+       
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="card-product">
+      <div class="container-img">
+        <img src="img/extreme.png" alt="Todo Incluido!" />
+        <div class="button-group">
+          <span><i class="fa-regular fa-eye"></i></span>
+          <span><i class="fa-regular fa-heart"></i></span>
+          <span><i class="fa-solid fa-code-compare"></i></span>
+        </div>
+      </div>
+      <div class="content-card-product">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Todo Incluido!</h3>
+        <span class="add-cart"
+              data-title="Todo Incluido!"
+              data-img="img/antes.jpeg"
+              data-desc="Paquete completo: interior, exterior, detallado y más"
+              data-price="">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+      
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal flotante -->
+<div class="modal-cart" id="modalCart">
+  <div class="modal-cart-content">
+    <span class="close-modal">&times;</span>
+    <h2 id="modal-title">Título</h2>
+    <img id="modal-img" src="" alt="Imagen">
+    <p id="modal-desc">Descripción</p>
+    <div class="modal-footer">
+      <span id="modal-price" class="price">$0.00</span>
+      <button id="btnConfirmarPromo" class="btn-confirm-cart">
+        <i class="fa-solid fa-basket-shopping"></i> Información
+      </button>
+    </div>
+  </div>
+</div>
+			</section>
+
+			<section id="Mas"class="container blogs">
+				<h1 class="heading-1">Más información</h1>
+
+				<div class="container-blogs">
+					<div class="card-blog">
+						<div class="container-img">
+							<img src="img/top10.jpg" alt="Imagen Blog 1" />
+							<div class="button-group-blog">
+								<span>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-link"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-blog">
+							<h3>¿Por qué lavar el vehiculo constantemente?</h3>
+							<span>25 Abril 2025</span>
+							<p>
+								Lavar el carro regularmente es importante para mantener su apariencia, proteger la pintura y prolongar la vida útil de sus componentes. La acumulación de suciedad, polvo y contaminantes puede dañar la pintura, causar corrosión y afectar la seguridad de la conducción.  
+							</p>
+							<a href="https://www.autocardenas.com.co/index.php/en/blog/noticias-2/86-importancia-de-lavar-el-vehiculo" class="btn-read-more">Leer más</a>
+						</div>
+					</div>
+					<div class="card-blog">
+						<div class="container-img">
+							<img src="img/blog-2.webp" alt="Imagen Blog 2" />
+							<div class="button-group-blog">
+								<span>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-link"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-blog">
+							<h3>Mitos sobre lavar tu vehiculo </h3>
+							<span>23 Noviembre 2024</span>
+						
+								<p>
+                                    A todos nos gusta tener el coche cuidado y limpio, y ya te habíamos enseñado los mejores trucos para lavar el coche, sin embargo hay una serie de mitos que todos hemos escuchado y nos hacen dudar a la hora de la limpieza. Aquí te desvelamos los más sonados:
+							</p>
+							</p>
+							<a href="https://www.coches.com/noticias/consejos/10-mitos-sobre-lavar-el-coche/179002" class="btn-read-more">Leer más</a>
+						</div>
+					</div>
+					<div class="card-blog">
+						<div class="container-img">
+							<img src="img/inflable.jpg" alt="Imagen Blog 3" />
+							<div class="button-group-blog">
+								<span>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-link"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-blog">
+							<h3>Lo mejor para tu carro</h3>
+							<span>23 Noviembre 2024</span>
+							<p>
+                                Lo ideal para lavar tu carro es usar champú para autos de pH neutro y, para el interior, un limpiador de plásticos específicos para interiores. También es recomendable usar toallas o paños de microfibra para evitar rayar la pintura. 
+							</p>
+							<a href="https://www.grupor5.com/blog/movilidad/lavar-el-carro" class="btn-read-more">Leer más</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container container-footer">
+				<div class="menu-footer">
+					<div class="contact-info">
+						<p class="title-footer">Información de Contacto</p>
+						<ul>
+							<li>
+								Dirección: Avenida El Dorado # 85 A - 52 Bogotá Bogotá D.C, Cundinamarca
+							</li>
+							<li>Teléfono: 3165074658</li>
+							<li>Fax: 7577614</li>
+							<li>EmaiL: cicarwashsuper1@gmail.com</li>
+						</ul>
+						<div class="social-icons">
+						<a href="https://www.facebook.com/people/Super1carwash/61556529346260/" target="_blank" rel="noopener noreferrer">
+							<span class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            </span>
+                        </a>
+							<span class="twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</span>
+							<span class="youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</span>
+							<span class="pinterest">
+								<i class="fa-brands fa-pinterest-p"></i>
+							</span>
+							<a href="https://www.instagram.com/super1carwash?igsh=Mjc5c2o3NDE5dmps" target="_blank" rel="noopener noreferrer">
+							<span class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</span>
+						</a>
+						</div>
+					</div>
+
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li><a href="#">Acerca de Nosotros</a></li>
+							<li><a href="#">Información Delivery</a></li>
+							<li><a href="#">Politicas de Privacidad</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+							<li><a href="#">Contactános</a></li>
+						</ul>
+					</div>
+
+					<div class="my-account">
+						<p class="title-footer">Mi cuenta</p>
+
+						<ul>
+							<li><a href="#">Mi cuenta</a></li>
+							<li><a href="#">Historial de ordenes</a></li>
+							<li><a href="#">Lista de deseos</a></li>
+							<li><a href="#">Boletín</a></li>
+							<li><a href="#">Reembolsos</a></li>
+						</ul>
+					</div>
+
+					<div class="newsletter">
+						<p class="title-footer">Boletín informativo</p>
+
+						<div class="content">
+							<p>
+								Suscríbete a nuestros boletines ahora y mantente al
+								día con nuevas colecciones y ofertas exclusivas.
+							</p>
+							<input type="email" placeholder="Ingresa el correo aquí...">
+							<button>Suscríbete</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyright">
+					<p>
+						Desarrollado por AutoLavadoSuper-1 &copy; 2025
+					</p>
+
+					<img src="img/payment.png" alt="Pagos">
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://kit.fontawesome.com/f78d16ced4.js" crossorigin="anonymous"></script>
+
+
+
+	</body>
+    <script>
+  document.getElementById('searchForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const resultsDiv = document.getElementById('results');
+      resultsDiv.innerHTML = '';
+
+     
+      const sections = document.querySelectorAll('section');
+      let found = false;
+
+      sections.forEach(section => {
+          if (section.innerText.toLowerCase().includes(query)) {
+              found = true;
+              resultsDiv.textContent = 'Se encontraron resultados. Desplazándose a la sección...';
+              section.scrollIntoView({ behavior: 'smooth' });
+          }
+      });
+
+      if (!found) {
+          resultsDiv.textContent = 'No se encontraron resultados.';
+      }
+  });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const openModalButtons = document.querySelectorAll('.open-modal');
+    const modals = document.querySelectorAll('.modal');
+    const closeButtons = document.querySelectorAll('.close');
+    const container = document.querySelector('.top-categories');
+
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modalId = button.getAttribute('data-target');
+            document.getElementById(modalId).style.display = 'block';
+            container.classList.add('blur-background'); 
+        });
+    });
+
+    closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            modals.forEach(modal => modal.style.display = 'none');
+            container.classList.remove('blur-background');
+        });
+    });
+
+    window.addEventListener('click', (event) => {
+        modals.forEach(modal => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                container.classList.remove('blur-background'); 
+            }
+        });
+    });
+});
+
+
+	function openModal() {
+		document.getElementById("infoModal").style.display = "flex";
+	}
+
+	function closeModal() {
+		document.getElementById("infoModal").style.display = "none";
+	}
+
+const slides = [
+  { type: "video", src: "img/video1.mp4" },
+  { type: "video", src: "img/video3.mp4" },
+  { type: "video", src: "img/video4.mp4" },
+  { type: "image", src: "img/folleto.jpeg" },
+  { type: "image", src: "img/folletoo.jpeg" },
+  { type: "image", src: "img/folleto1.jpeg" },
+  { type: "image", src: "img/folleto2.jpeg" },
+  { type: "image", src: "img/folleto3.jpeg" },
+  { type: "image", src: "img/folleto4.jpeg" },
+  { type: "image", src: "img/folleto5.jpeg" },
+  { type: "image", src: "img/folleto6.jpeg" },
+  { type: "image", src: "img/folleto7.jpeg" },
+  { type: "video", src: "img/video2.mp4" }
+  
+];
+
+let currentSlide = 0;
+
+function renderSlide(index) {
+  const container = document.getElementById("carouselSlide");
+  container.innerHTML = ""; // limpia el contenido anterior
+
+  const slide = slides[index];
+
+  if (slide.type === "image") {
+    const img = document.createElement("img");
+    img.src = slide.src;
+    img.alt = "Folleto";
+    img.style.width = "100%";
+    container.appendChild(img);
+  } else if (slide.type === "video") {
+    const video = document.createElement("video");
+    video.src = slide.src;
+    video.controls = true;
+    video.style.width = "100%";
+    video.style.borderRadius = "10px";
+    video.autoplay = false;
+    video.playsInline = true;
+    container.appendChild(video);
+  }
+}
+
+function changeSlide(step) {
+  currentSlide = (currentSlide + step + slides.length) % slides.length;
+  renderSlide(currentSlide);
+}
+
+window.onload = () => renderSlide(currentSlide);
+
+
+	// Cerrar al hacer clic fuera del contenido
+	window.onclick = function (event) {
+		const modal = document.getElementById("infoModal");
+		if (event.target === modal) {
+			closeModal();
+		}
+	}
+function openModal() {
+	document.getElementById("infoModal").style.display = "block";
+	document.getElementById("carouselImage").src = images[currentIndex];
+	document.getElementById("mainContent").classList.add("blur-background");
+}
+
+function closeModal() {
+	document.getElementById("infoModal").style.display = "none";
+	document.getElementById("mainContent").classList.remove("blur-background");
+}
+
+	const cartButtons = document.querySelectorAll('.add-cart');
+    const modalCart = document.getElementById('modalCart');
+    const modalTitle = document.getElementById('modal-title');
+    const modalImg = document.getElementById('modal-img');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalPrice = document.getElementById('modal-price');
+    const closeModalCart = document.querySelector('.close-modal');
+
+    cartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            modalTitle.textContent = button.getAttribute('data-title');
+            modalImg.src = button.getAttribute('data-img');
+            modalDesc.textContent = button.getAttribute('data-desc');
+            modalPrice.textContent = button.getAttribute('data-price');
+            modalCart.style.display = 'flex';
+        });
+    });
+
+    if (closeModalCart) {
+        closeModalCart.addEventListener('click', () => {
+            modalCart.style.display = 'none';
+        });
+    }
+
+
+  document.getElementById("btnConfirmarPromo").addEventListener("click", function () {
+    const title = document.getElementById("modal-title").textContent.trim();
+    const numero = "573165074658";
+
+    let mensaje = "!Hola, me interesó esta promoción! ";
+
+    if (title.toLowerCase().includes("normal")) {
+      mensaje += "Estoy interesado en el lavado normal.";
+    } else if (title.toLowerCase().includes("detallado")) {
+      mensaje += "Estoy interesado en el lavado detallado.";
+    } else if (title.toLowerCase().includes("incluido") || title.toLowerCase().includes("todo")) {
+      mensaje += "Estoy interesado en el lavado todo incluido.";
+    } else {
+      mensaje += "Quiero más información sobre esta promoción.";
+    }
+
+    const enlace = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+    window.open(enlace, "_blank");
+  });
+
+
+
+    </script>
+</html>
